@@ -1,0 +1,5 @@
+Circuit: * C:\Users\Ema\Desktop\Tema1_ELTH\Draft2.asc
+
+I1: both pins shorted together -- ignoring.
+R2: both pins shorted together -- ignoring.
+Fatal Error: This circuit does not contain a node other than node "0" (GND)

@@ -1,0 +1,32 @@
+function dependenta()
+  Rab = -999993333328;
+  Uab = 5 - 2.99998^12;
+  U = zeros(1, 100);
+  I = zeros(1, 100);
+  P = zeros(1, 100);
+  R = linspace(0,20,100);
+  for i = 1:100
+    I(i) = Uab / (R(i) + Rab);
+    U(i) = I(i) * R(i);
+    P(i) = U(i) * I(i);
+  endfor
+  plot(R, I);
+  hold on;
+  plot(R, U);
+  hold on;
+  Pmax = max(P);
+  idx = find (P == Pmax);
+  x = R(idx)
+  y = P(idx)
+  plot(R, P);
+  hold on;
+  plot(x, y, "r*");
+  plot(0, I(1), "b*");
+  legend( 'Intensitate', 'Tensiune', 'Putere', 'Transfer maxim putere', 
+'Punct functionare initial');
+  I(1)
+  U(1)
+  P(1)
+  
+  endfunction
+  
